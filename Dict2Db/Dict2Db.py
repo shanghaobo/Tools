@@ -30,7 +30,6 @@ class Dict2Db:
         print('sql=',sql%(tuple(values)))
         cursor.execute(sql,tuple(values))
         cursor.close()
-        self.conn.commit()
 
     def commit(self):
         self.conn.commit()
